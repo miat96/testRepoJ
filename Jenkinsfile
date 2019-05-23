@@ -3,7 +3,7 @@ node{
     git 'https://github.com/miat96/testRepoJ.git'
   }
   stage('Compile-Package'){
-    def mvnHome = tool name: 'LocalMaven', type: 'maven'
+    def mvnHome = tool name: 'Maven', type: 'maven'
     sh "${mvnHome}/bin/mvn package"
   }
 }
